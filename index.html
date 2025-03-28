@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        }
+        header{
+            background-color: #1d2b36;
+            color: white;
+            padding: 15px 20px;
+        }
+        h1{
+            display: inline-block;
+        }
+        nav{
+            
+            display: inline-block;
+            margin-left: 20vh;
+        }
+        nav p{
+            display: inline-block;
+            margin-left: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .contenedores{
+            justify-content: center;
+            padding: 8vh;
+            display: inline-block;
+        }
+        .imagen{
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 40vh;
+            display: inline-block;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .imagen img{
+            display: inline-block;
+            height: 40vh;
+            width: 100%;
+            object-fit: cover;
+        }
+        .imagen h2{
+            margin: 15px 0 5px;
+            font-size: 18px;
+
+        }
+        .imagen p{
+            margin-bottom: 3vh;
+        }
+        .tabla{
+            padding: 20px;
+            justify-content: center;
+            
+        }
+        table{
+            border: solid 1px #ddd;
+            margin-left: 13vh;
+            border-collapse: collapse;
+            overflow: hidden;
+            width: 80%;
+            padding: 5vh;
+        }
+        th{
+            background-color: #1d2b36;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        td{
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        nav p:hover{
+            color: #2b5388;
+            cursor:pointer;
+            
+        }
+        .imagen:hover{
+            transform: scale(1.03);
+        }
+        .tabla th:hover {
+             background-color: #dce0e4;
+        }
+  
+        .tabla tbody tr:hover {
+            background-color: #e2e8f0;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    
+    <header> 
+        <h1>Viajes y Naturaleza</h1>
+        <nav>  
+            <p>Inicio</p>
+            <p>Galeria</p>
+            <p>Destinos</p>
+            <p>Contacto</p>
+        </nav>
+    </header>
+    <div class="contenedores">    
+        <section class="imagen">
+            <img src="https://imgs.search.brave.com/kQX0QTU9VuJjZUdw2o_hMqp0crUFoCX1261y_ZnoN8o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzc1LzMz/L2Y1Lzc1MzNmNTkw/NDQ1N2NkMGNkNjJj/YWFhNjkyNGY3ODEz/LmpwZw" alt="">
+            <h2>Paisajes de montaña</h2>
+            <p>Impresionantes vistas de cordilleras y picos elevados</p>
+        </section>
+        <section class="imagen">
+            <img src="https://imgs.search.brave.com/mnL6uL_xNVAzy92EMEIAipv2N10bTH5Jp_Qp6G3SrFE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTM5/OTg1NjIyNi9lcy9m/b3RvL3BhaXNhamUt/bSVDMyVBMWdpY28t/ZGVsLWJvc3F1ZS1j/b24tcmF5b3MtZGUt/c29sLXF1ZS1pbHVt/aW5hbi1lbC1mb2xs/YWplLWRvcmFkby5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/eVpuNWI1czZKNTRK/NGczNEktT2hVYW1G/ZjVOTElNOTN4TW5S/LVN6WnNFcz0">
+            <h2>Bosques misteriosos</h2>
+            <p>Explorando la tranquilidad de los bosques antiguos</p>
+        </section>
+        <section class="imagen">
+            <img src="https://imgs.search.brave.com/bpTtj4hNLEz312RiPA4EfNdJRa5HT6arfbNYUSgAkmc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/aW1wcmVzaW9uYW50/ZS12aXN0YS1wYWlz/YWplLW1hcmluby1y/b2Nhcy1lc3BlY3Rh/Y3VsYXItcHVlc3Rh/LXNvbC1lc2Nlbmlj/YV8xODE2MjQtMzEy/NzMuanBnP3NlbXQ9/YWlzX2h5YnJpZA">
+            <h2>Costas paradisiacas</h2>
+            <p>Relajandose en playas de arena blanca y aguas cristalinas</p>
+        </section>
+    </div>
+    <section class="tabla">   
+        <table>
+            <tr>
+                <section class="enca">   
+                    <th>Destino</th>
+                    <th>Pais</th>
+                    <th>Dificultad</th>
+                    <th>Temporada recomendada</th>
+                </section>
+            </tr>
+            <tr>
+                <td>Machu Picchu</td>
+                <td>Perú</td>
+                <td>Alta</td>
+                <td>Mayo-septiembre</td>
+            </tr>
+            <tr>
+                <td>Glaciares de patagonia</td>
+                <td>Argentina</td>
+                <td>Media</td>
+                <td>Diciembre-febrero</td>
+            </tr>
+            <tr>
+                <td>Gran Cañon</td>
+                <td>Estados Unidos</td>
+                <td>Baja</td>
+                <td>Marzo-mayo</td>
+            </tr>
+            <tr>
+                <td>Monte Everest</td>
+                <td>Nepal</td>
+                <td>Alta</td>
+                <td>Octubre-noviembre</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
